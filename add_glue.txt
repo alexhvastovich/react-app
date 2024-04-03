@@ -1,0 +1,14 @@
+Instructions:
+
+1.) Install the gherkin full support plugin within VSCODE
+
+2.) Add .vscode/settings.json file in root folder of react-app
+ - Click  the VS code / preferences / settings link
+
+Then add the following in your settings.json
+
+{     
+"cucumberautocomplete.steps": ["./e2e/src/step-definitions/**/*.ts"],     "cucumberautocomplete.syncfeatures": "./e2e/src/features/*.feature", 
+}
+
+Then you should be able to step into your step definitions via the cucumber scenario :)
